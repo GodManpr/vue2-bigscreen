@@ -1,0 +1,131 @@
+$padding: 20px;
+$mt6: 6px;
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  background-color: #e5e9ec;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.padding-content {
+  padding: 4px 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+.text-center {
+  text-align: center
+}
+
+/* 主体 */
+.content {
+  color: #ddd;
+  background: #000;
+  width: 100%;
+  height: 100vh;
+}
+
+.bg {
+  padding: 0;
+  background: url('../assets/img/pageBg.png') no-repeat center center;
+  background-size: cover;
+}
+
+.module-box {
+  display: flex;
+  //justify-self: space-between;
+  margin: 20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+/* 文本对齐 */
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+// capsuleChart胶囊图
+.capsuleChart {
+  padding: $padding;
+}
+
+// capsuleChart水位图 // conicalChart锥形柱图 // scrollChart排名轮播表 // percentChart进度池
+.waterChart, .conicalChart, .scrollChart, .percentChart {
+  padding: $padding;
+
+  span {
+    display: inline-block;
+    margin-bottom: $mt6;
+  }
+}
