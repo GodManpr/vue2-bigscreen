@@ -7,12 +7,12 @@ module.exports = defineConfig(() => {
     devServer: {
       port: VUE_PORT,
       host: VUE_HOST,
-      proxy: {
-        '/api': {
-          target: VUE_API_PATH,
-          changeOrigin: true
-        },
-      }
+      // proxy: {
+      //   '/api': {
+      //     target: VUE_API_PATH,
+      //     changeOrigin: true
+      //   },
+      // }
     }
   }
 })
